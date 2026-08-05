@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef  } from "react";
 import "../css/Home.css";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../context/Themecontext";
 import { Link } from "react-router-dom";
 import supportImage from "../assets/supportimg.png";
 import heroImage from "../assets/background.jpeg";
