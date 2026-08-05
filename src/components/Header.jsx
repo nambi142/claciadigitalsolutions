@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../context/Themecontext";
 import { FaPhoneAlt, FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
 import "../css/Header.css";
 import logo from "../assets/brandlogo.png";
