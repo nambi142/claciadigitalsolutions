@@ -7,6 +7,7 @@ html, body, #root {
   font-family: "Sansation", sans-serif;
   font-weight: 300;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 .app-shell {
@@ -41,15 +42,40 @@ html, body, #root {
     border:1.5px solid #d7b4ff;
 }
 
-/* faint tiled icon background, sits behind the text */
+/* faint scattered icons, sits behind the text */
 .page-header-pattern{
     position:absolute;
     inset:0;
     width:100%;
     height:100%;
-    opacity:0.30;
     pointer-events:none;
+    z-index:0;
 }
+
+.ph-icon{
+    position:absolute;
+    color:#fff;
+    opacity:0.30;
+}
+
+.ph-icon-1{  top:12%; left:6%;   font-size:34px; }
+.ph-icon-2{  top:78%; left:10%;  font-size:30px; }
+.ph-icon-3{  top:22%; left:20%;  font-size:26px; }
+.ph-icon-4{  top:60%; left:24%;  font-size:38px; }
+.ph-icon-5{  top:8%;  left:36%;  font-size:28px; }
+.ph-icon-6{  top:85%; left:34%;  font-size:32px; }
+.ph-icon-7{  top:35%; left:44%;  font-size:24px; }
+.ph-icon-8{  top:65%; left:48%;  font-size:30px; }
+.ph-icon-9{  top:15%; right:38%; font-size:32px; }
+.ph-icon-10{ top:80%; right:32%; font-size:26px; }
+.ph-icon-11{ top:28%; right:22%; font-size:36px; }
+.ph-icon-12{ top:65%; right:18%; font-size:28px; }
+.ph-icon-13{ top:10%; right:10%; font-size:30px; }
+.ph-icon-14{ top:75%; right:8%;  font-size:34px; }
+.ph-icon-15{ top:45%; right:5%;  font-size:26px; }
+.ph-icon-16{ top:50%; left:8%;   font-size:24px; }
+.ph-icon-17{ top:40%; left:16%;  font-size:28px; }
+.ph-icon-18{ top:5%;  left:50%;  font-size:26px; }
 
 .page-header-inner{
     position:relative;
@@ -119,6 +145,13 @@ html, body, #root {
 
     .page-header-title{
         font-size:32px;
+    }
+
+    /* reduce icon clutter on small screens */
+    .ph-icon-3, .ph-icon-6, .ph-icon-9,
+    .ph-icon-11, .ph-icon-12, .ph-icon-14,
+    .ph-icon-16, .ph-icon-17, .ph-icon-18{
+        display:none;
     }
 }
 

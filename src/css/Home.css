@@ -74,6 +74,7 @@
 }
 
 .primary-btn {
+    display: inline-block;
     border: none;
     cursor: pointer;
     background: #a020f0;
@@ -82,14 +83,17 @@
     border-radius: 60px;
     font-size: 16px;
     font-weight: 600;
+    text-decoration: none;
     transition: .35s;
 }
 
 .primary-btn:hover {
     background: #8718cc;
+    color: #fff;
 }
 
 .secondary-btn {
+    display: inline-block;
     border: 2px solid rgba(255, 255, 255, .4);
     background: transparent;
     color: #fff;
@@ -98,6 +102,7 @@
     border-radius: 60px;
     font-size: 16px;
     font-weight: 600;
+    text-decoration: none;
     transition: .35s;
 }
 
@@ -157,7 +162,7 @@
 
     .primary-btn,
     .secondary-btn {
-        width: 100%;
+        width: 60%;
     }
 }
 

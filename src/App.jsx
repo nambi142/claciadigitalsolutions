@@ -5,6 +5,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Service from "./components/Service";
 import Contact from "./components/Contact";
+import { decorativeIcons } from "./components/Decorativeicons";
 import { Routes, Route } from "react-router-dom";
 import useScrollReveal from "./hooks/useScrollReveal";
 import "./App.css";

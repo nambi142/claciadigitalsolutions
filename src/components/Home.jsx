@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef  } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../css/Home.css";
 import { useTheme } from "../context/Themecontext";
 import { Link } from "react-router-dom";
@@ -177,9 +177,13 @@ const Home = () => {
                 </p>
 
                 <div className="hero-buttons">
-                  <button className="primary-btn">Get Started</button>
+                  <Link to="/contact" className="primary-btn">
+                    Get Started
+                  </Link>
 
-                  <button className="secondary-btn">Our Services</button>
+                  <Link to="/service" className="secondary-btn">
+                    Our Services
+                  </Link>
                 </div>
               </div>
             </div>
@@ -319,7 +323,7 @@ const Home = () => {
       </section>
 
       {/* ---------- DEDICATED SUPPORT ---------- */}
-      <section className="support-section reveal-left" >
+      <section className="support-section reveal-left">
         <div className="support-container">
           <div className="support-content">
             <span className="support-tag">SUPPORT</span>
@@ -351,7 +355,7 @@ const Home = () => {
         </div>
       </section>
 
-       {/* ---------- WHAT CLIENTS SAY ---------- */}
+      {/* ---------- WHAT CLIENTS SAY ---------- */}
       <section className="testimonials-section reveal-right">
         <div className="testimonials-container">
           <div className="testimonials-header">

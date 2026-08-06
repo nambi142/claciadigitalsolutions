@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useTheme } from "../context/Themecontext";
 import { FaPhoneAlt, FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
 import "../css/Header.css";
@@ -73,23 +73,9 @@ const Header = () => {
             Service
           </NavLink>
 
-          <NavLink to="/testimonials" onClick={closeMenu}>
-            Testimonials
+          <NavLink to="/contact" onClick={closeMenu}>
+            Contact
           </NavLink>
-
-          <NavLink to="/seotool" onClick={closeMenu}>
-            SeoTool
-          </NavLink>
-        </div>
-
-        <div className="mobile-bottom">
-          <a href="tel:+918637619849" className="call-btn mobile-call-btn">
-            <span className="phone-icon">
-              <FaPhoneAlt />
-            </span>
-
-            <span>Contact Us</span>
-          </a>
         </div>
       </aside>
 

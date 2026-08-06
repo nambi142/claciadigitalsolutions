@@ -66,7 +66,7 @@ const Footer = () => {
 
             <div className="footer-socials">
               <a
-                href="https://instagram.com/dummyhandle"
+                href="https://www.instagram.com/clacia_digital_solutions?igsh=bGZmMmkwbm9hNml6"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram">
@@ -74,14 +74,14 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://wa.me/911234567890"
+                href="https://wa.me/637980696"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp">
                 <FaWhatsapp />
               </a>
 
-              <a href="mailto:dummy@example.com" aria-label="Email">
+              <a href="claciadigitalsolutions@gmail.com" aria-label="Email">
                 <FaEnvelope />
               </a>
             </div>
