@@ -77,7 +77,7 @@
     display: inline-block;
     border: none;
     cursor: pointer;
-    background: #a020f0;
+    background: #6c5ce7;
     color: #fff;
     padding: 16px 34px;
     border-radius: 60px;
@@ -232,7 +232,7 @@
   height: auto;
   display: block;
   border-radius: 24px;
-  background: #a020f0;
+  background: #6c5ce7;
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
@@ -275,7 +275,7 @@
 .wcu-bars span {
   flex: 1;
   border-radius: 3px;
-  background: linear-gradient(180deg, #b94cff, #a020f0);
+  background: linear-gradient(180deg, #b94cff, #6c5ce7);
 }
 
 /* Growth card */
@@ -352,7 +352,7 @@
 .wcu-badge-seo{
     top:48%;
     right:22%;
-    background:#a020f0;
+    background:#6c5ce7;
     animation-delay:2.3s;
 }
 
@@ -382,7 +382,7 @@
   align-items: center;
   gap: 6px;
   background: #f6ecff;
-  color: #a020f0;
+  color: #6c5ce7;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -399,7 +399,7 @@
   margin: 0 0 18px;
 }
 .wcu-heading span {
-  color: #a020f0;
+  color: #6c5ce7;
 }
 
 .wcu-description {
@@ -445,7 +445,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background: #a020f0;
+  background: #6c5ce7;
   color: #fff;
   border: none;
   padding: 15px 28px;
@@ -494,7 +494,7 @@ body.dark .wcu-feature{
 }
 
 body.dark .wcu-check{
-    background:#a020f0;
+    background:#6c5ce7;
 }
 
 body.dark .wcu-tag{
@@ -572,7 +572,7 @@ body.dark .footer{
     padding:10px 24px;
     border-radius:40px;
     background:#f6ecff;
-    color:#a020f0;
+    color:#6c5ce7;
     font-size:14px;
     font-weight:700;
     letter-spacing:1px;
@@ -932,7 +932,7 @@ body.dark .benefit-vertical{
 ========================================================== */
 
 .support-section{
-    --s-accent:#a020f0;
+    --s-accent:#6c5ce7;
     --s-accent-soft:#f3e5ff;
     padding:30px 30px;
     background:#faf6ff;

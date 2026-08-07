@@ -30,13 +30,13 @@ body.dark .contact-section {
   --bg: #111111;
   --heading-color: #ffffff;
   --subtext-color: #c9b8db;
-  --card-bg: #1f1330;
+  --card-bg: #6c5ce7;
   --input-bg: #1f1330;
   --input-border: #3a2a52;
   --input-text: #f0e9ff;
   --input-placeholder: #9b86b8;
-  --accent: #c77dff;
-  --accent-hover: #e0b3ff;
+  --accent: #6c5ce7;
+  --accent-hover: #6c5ce7;
   --divider-color: #3a2a52;
   --location-text: #c9b8db;
   --social-icon: #9b86b8;

@@ -3,7 +3,7 @@
 ========================================================== */
 
 .services-section{
-    --sv-accent:#a020f0;
+    --sv-accent:#6c5ce7;
     --sv-accent-dark:#6a0dad;
     --sv-bg:#ffffff;
     --sv-heading:#0d1b3e;
@@ -190,12 +190,12 @@ body.dark .service-icon-badge{
 ========================================================== */
 
 .process-section{
-    --pr-accent:#a020f0;
+    --pr-accent:#6c5ce7;
     --pr-accent-dark:#6a0dad;
     --pr-bg:#ffffff;
     --pr-heading:#0d1b3e;
     --pr-card-bg:#faf1e6;
-    --pr-tag-bg:#a020f0;
+    --pr-tag-bg:#6c5ce7;
     padding:30px 30px;
     background:var(--pr-bg);
 }
@@ -410,7 +410,7 @@ body.dark .skillup-section{
     font-weight:700;
     letter-spacing:.1em;
     text-transform:uppercase;
-    color:#a020f0;
+    color:#6c5ce7;
     padding-bottom:16px;
     margin-bottom:26px;
     border-bottom:1px solid #ececec;
@@ -471,7 +471,7 @@ body.dark .skillup-btn{
 }
 
 body.dark .skillup-btn:hover{
-    background:#a020f0;
+    background:#6c5ce7;
     color:#fff;
 }
 

@@ -91,7 +91,7 @@ nav a{
 
 nav a:hover,
 nav a.active{
-    color:#a020f0;
+    color:#6c5ce7;
 }
 
 body.dark nav a{
@@ -117,7 +117,7 @@ body.dark nav a:hover{
     border-radius:50%;
     border:1px solid #dcb5ff;
     background:#fff;
-    color:#a020f0;
+    color:#6c5ce7;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -127,7 +127,7 @@ body.dark nav a:hover{
 }
 
 .theme-btn:hover{
-    background:#a020f0;
+    background:#6c5ce7;
     color:#fff;
 }
 
@@ -157,20 +157,20 @@ body.dark .theme-btn{
     display:flex;
     align-items:center;
     justify-content:center;
-    background:#a020f0;
+    background:#6c5ce7;
     color:#fff;
     font-size:16px;
     transition:.35s;
 }
 
 .call-btn:hover{
-    background:#a020f0;
+    background:#6c5ce7;
     color:#fff;
 }
 
 .call-btn:hover .phone-icon{
     background:#fff;
-    color:#a020f0;
+    color:#6c5ce7;
 }
 
 body.dark .call-btn{
@@ -183,7 +183,7 @@ body.dark .call-btn{
     display:none;
     justify-content:center;
     align-items:center;
-    background:#a020f0;
+    background:#6c5ce7;
     color:#fff;
     border-radius:12px;
     cursor:pointer;
@@ -294,7 +294,7 @@ body.dark .mobile-logo p{
     width:40px;
     height:40px;
     border:none;
-    background:#a020f0;
+    background:#6c5ce7;
     color:#fff;
     border-radius:10px;
     display:flex;
@@ -326,7 +326,7 @@ body.dark .mobile-logo p{
 
 .mobile-links a:hover,
 .mobile-links a.active{
-    color:#a020f0;
+    color:#6c5ce7;
 }
 
 body.dark .mobile-links a{

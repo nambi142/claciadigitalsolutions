@@ -37,7 +37,7 @@ body {
     min-height: 100vh;
 }
 
-.app-shell > main {
+.app-shell>main {
     flex: 1;
 }
 
@@ -47,25 +47,16 @@ body {
 ========================================================== */
 
 .page-header {
-    --ph-accent: #a020f0;
-
     width: 92%;
     max-width: 1400px;
-
     margin: 0 auto 40px;
-
     position: relative;
-
-    background: var(--ph-accent);
-
+    background: #6c5ce7;
     overflow: hidden;
-
     padding: 80px 40px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 22px;
     border: 1.5px solid #d7b4ff;
 }
