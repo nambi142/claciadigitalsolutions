@@ -1,231 +1,345 @@
 @import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 
+/* ==========================================================
+   GLOBAL
+========================================================== */
 
-html, body, #root {
-  height: 100%;
-  font-family: "Sansation", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  overflow-x: hidden;
+html {
+    scroll-behavior: smooth;
 }
 
+html,
+body,
+#root {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Sansation", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    overflow-x: hidden;
+}
+
+
+/* ==========================================================
+   APP SHELL
+========================================================== */
+
 .app-shell {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .app-shell > main {
-  flex: 1;
+    flex: 1;
 }
+
 
 /* ==========================================================
-   PAGE HEADER (About, and reusable for other inner pages)
+   PAGE HEADER
 ========================================================== */
 
-.page-header{
-    --ph-accent:#a020f0;
+.page-header {
+    --ph-accent: #a020f0;
 
-    width:92%;
-    max-width:1400px;
-    margin:0 auto 40px;
-    position:relative;
-    background:var(--ph-accent);
-    overflow:hidden;
-    padding:80px 40px;   /* was 110px — lower = shorter header */
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    width: 92%;
+    max-width: 1400px;
 
-    border-radius:22px;
-    border:1.5px solid #d7b4ff;
+    margin: 0 auto 40px;
+
+    position: relative;
+
+    background: var(--ph-accent);
+
+    overflow: hidden;
+
+    padding: 80px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 22px;
+    border: 1.5px solid #d7b4ff;
 }
 
-/* faint scattered icons, sits behind the text */
-.page-header-pattern{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    pointer-events:none;
-    z-index:0;
-}
-
-.ph-icon{
-    position:absolute;
-    color:#fff;
-    opacity:0.30;
-}
-
-.ph-icon-1{  top:12%; left:6%;   font-size:34px; }
-.ph-icon-2{  top:78%; left:10%;  font-size:30px; }
-.ph-icon-3{  top:22%; left:20%;  font-size:26px; }
-.ph-icon-4{  top:60%; left:24%;  font-size:38px; }
-.ph-icon-5{  top:8%;  left:36%;  font-size:28px; }
-.ph-icon-6{  top:85%; left:34%;  font-size:32px; }
-.ph-icon-7{  top:35%; left:44%;  font-size:24px; }
-.ph-icon-8{  top:65%; left:48%;  font-size:30px; }
-.ph-icon-9{  top:15%; right:38%; font-size:32px; }
-.ph-icon-10{ top:80%; right:32%; font-size:26px; }
-.ph-icon-11{ top:28%; right:22%; font-size:36px; }
-.ph-icon-12{ top:65%; right:18%; font-size:28px; }
-.ph-icon-13{ top:10%; right:10%; font-size:30px; }
-.ph-icon-14{ top:75%; right:8%;  font-size:34px; }
-.ph-icon-15{ top:45%; right:5%;  font-size:26px; }
-.ph-icon-16{ top:50%; left:8%;   font-size:24px; }
-.ph-icon-17{ top:40%; left:16%;  font-size:28px; }
-.ph-icon-18{ top:5%;  left:50%;  font-size:26px; }
-
-.page-header-inner{
-    position:relative;
-    z-index:1;
-    max-width:800px;
-    text-align:center;
-}
-
-.page-header-title{
-    font-size:44px;
-    font-weight:800;
-    letter-spacing:.01em;
-    color:#fff;
-    margin:0 0 18px;
-}
-
-.page-header-breadcrumb{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-    font-size:13px;
-    font-weight:600;
-    letter-spacing:.06em;
-    text-transform:uppercase;
-}
-
-.page-header-breadcrumb a{
-    color:rgba(255,255,255,0.75);
-    text-decoration:none;
-    transition:.25s ease;
-}
-
-.page-header-breadcrumb a:hover{
-    color:#fff;
-}
-
-.page-header-sep{
-    color:rgba(255,255,255,0.5);
-    font-size:13px;
-}
-
-.page-header-current{
-    color:#fff;
-    text-decoration:underline;
-    text-underline-offset:3px;
-}
-
-/* ---------- RESPONSIVE ---------- */
-/* breakpoints mirror header.css so both shells resize together */
-
-@media (max-width:992px){
-
-    .page-header{
-        width:94%;
-    }
-}
-
-@media (max-width:768px){
-
-    .page-header{
-        width:95%;
-        border-radius:18px;
-        padding:50px 24px;
-        margin-bottom:24px;
-    }
-
-    .page-header-title{
-        font-size:32px;
-    }
-
-    /* reduce icon clutter on small screens */
-    .ph-icon-3, .ph-icon-6, .ph-icon-9,
-    .ph-icon-11, .ph-icon-12, .ph-icon-14,
-    .ph-icon-16, .ph-icon-17, .ph-icon-18{
-        display:none;
-    }
-}
-
-@media (max-width:480px){
-
-    .page-header{
-        width:96%;
-    }
-}
 
 /* ==========================================================
-   SCROLL REVEAL — directional slide-in on scroll
-   Add ONE of these classes to any section wrapper:
-     .reveal        → fade + slide up   (neutral, default)
-     .reveal-left   → slides in from the LEFT
-     .reveal-right  → slides in from the RIGHT
-   (e.g. .hero, .why-choose-us, .benefits-section,
-   .support-section, .testimonials-section, .case-studies-section)
+   PAGE HEADER PATTERN
 ========================================================== */
 
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+.page-header-pattern {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    z-index: 0;
 }
 
-.reveal-left {
-  opacity: 0;
-  transform: translateX(-80px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+
+/* ==========================================================
+   PAGE HEADER ICONS
+========================================================== */
+
+.ph-icon {
+    position: absolute;
+    color: #fff;
+    opacity: 0.30;
 }
 
-.reveal-right {
-  opacity: 0;
-  transform: translateX(80px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+.ph-icon-1 {
+    top: 12%;
+    left: 6%;
+    font-size: 34px;
 }
 
-.reveal.reveal-visible,
-.reveal-left.reveal-visible,
-.reveal-right.reveal-visible {
-  opacity: 1;
-  transform: translate(0, 0);
+.ph-icon-2 {
+    top: 78%;
+    left: 10%;
+    font-size: 30px;
 }
 
-/* Optional: stagger children inside a revealed section
-   Add class="reveal-item" to cards/columns you want to
-   animate slightly after the section itself */
-.reveal-item {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+.ph-icon-3 {
+    top: 22%;
+    left: 20%;
+    font-size: 26px;
 }
 
-.reveal-visible .reveal-item {
-  opacity: 1;
-  transform: translateY(0);
+.ph-icon-4 {
+    top: 60%;
+    left: 24%;
+    font-size: 38px;
 }
 
-.reveal-visible .reveal-item:nth-child(1) { transition-delay: 0.05s; }
-.reveal-visible .reveal-item:nth-child(2) { transition-delay: 0.15s; }
-.reveal-visible .reveal-item:nth-child(3) { transition-delay: 0.25s; }
-.reveal-visible .reveal-item:nth-child(4) { transition-delay: 0.35s; }
-.reveal-visible .reveal-item:nth-child(5) { transition-delay: 0.45s; }
-.reveal-visible .reveal-item:nth-child(6) { transition-delay: 0.55s; }
+.ph-icon-5 {
+    top: 8%;
+    left: 36%;
+    font-size: 28px;
+}
 
-/* Respect users who've asked for less motion */
-@media (prefers-reduced-motion: reduce) {
-  .reveal,
-  .reveal-left,
-  .reveal-right,
-  .reveal-item {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
+.ph-icon-6 {
+    top: 85%;
+    left: 34%;
+    font-size: 32px;
+}
+
+.ph-icon-7 {
+    top: 35%;
+    left: 44%;
+    font-size: 24px;
+}
+
+.ph-icon-8 {
+    top: 65%;
+    left: 48%;
+    font-size: 30px;
+}
+
+.ph-icon-9 {
+    top: 15%;
+    right: 38%;
+    font-size: 32px;
+}
+
+.ph-icon-10 {
+    top: 80%;
+    right: 32%;
+    font-size: 26px;
+}
+
+.ph-icon-11 {
+    top: 28%;
+    right: 22%;
+    font-size: 36px;
+}
+
+.ph-icon-12 {
+    top: 65%;
+    right: 18%;
+    font-size: 28px;
+}
+
+.ph-icon-13 {
+    top: 10%;
+    right: 10%;
+    font-size: 30px;
+}
+
+.ph-icon-14 {
+    top: 75%;
+    right: 8%;
+    font-size: 34px;
+}
+
+.ph-icon-15 {
+    top: 45%;
+    right: 5%;
+    font-size: 26px;
+}
+
+.ph-icon-16 {
+    top: 50%;
+    left: 8%;
+    font-size: 24px;
+}
+
+.ph-icon-17 {
+    top: 40%;
+    left: 16%;
+    font-size: 28px;
+}
+
+.ph-icon-18 {
+    top: 5%;
+    left: 50%;
+    font-size: 26px;
+}
+
+
+/* ==========================================================
+   PAGE HEADER INNER
+========================================================== */
+
+.page-header-inner {
+    position: relative;
+    z-index: 1;
+
+    max-width: 800px;
+
+    text-align: center;
+}
+
+
+/* ==========================================================
+   PAGE HEADER TITLE
+========================================================== */
+
+.page-header-title {
+    font-size: 44px;
+    font-weight: 800;
+
+    letter-spacing: 0.01em;
+
+    color: #fff;
+
+    margin: 0 0 18px;
+}
+
+
+/* ==========================================================
+   BREADCRUMB
+========================================================== */
+
+.page-header-breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 0.06em;
+
+    text-transform: uppercase;
+}
+
+.page-header-breadcrumb a {
+    color: rgba(255, 255, 255, 0.75);
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+.page-header-breadcrumb a:hover {
+    color: #ffffff;
+}
+
+.page-header-sep {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+}
+
+.page-header-current {
+    color: #fff;
+
+    text-decoration: underline;
+
+    text-underline-offset: 3px;
+}
+
+
+/* ==========================================================
+   RESPONSIVE - TABLET
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .page-header {
+        width: 94%;
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE - MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .page-header {
+        width: 95%;
+
+        border-radius: 18px;
+
+        padding: 50px 24px;
+
+        margin-bottom: 24px;
+    }
+
+    .page-header-title {
+        font-size: 32px;
+    }
+
+    /* Reduce icon clutter on small screens */
+
+    .ph-icon-3,
+    .ph-icon-6,
+    .ph-icon-9,
+    .ph-icon-11,
+    .ph-icon-12,
+    .ph-icon-14,
+    .ph-icon-16,
+    .ph-icon-17,
+    .ph-icon-18 {
+        display: none;
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE - SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+    .page-header {
+        width: 96%;
+    }
+
 }

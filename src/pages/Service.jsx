@@ -7,28 +7,33 @@ import {
   FaBullhorn,
   FaChevronRight
 } from "react-icons/fa";
-import socialMediaImg from "../assets/services/socialmedia.jpeg";
+import Branding from "../assets/our_service/Branding.png";
+import seooptimaization from "../assets/our_service/seooptimazation.png";
+import socialmediamarketing from "../assets/our_service/socialmediamarketing.png";
+import contentmarketingteam from "../assets/our_service/content-marketing-team.png";
+import webdesign from "../assets/our_service/webdesigning.png";
+import Digitalstartegies from "../assets/our_service/digital-stratagies.png";
 import workflowImg from "../assets/workflowimg.png";
 import innovationImg from "../assets/innovation.png";
-import { decorativeIcons } from "../components/Decorativeicons";
+import { decorativeIcons } from "../pages/Decorativeicons";
 
 
 const services = [
   {
     id: 1,
-    title: "User Experience Design",
+    title: "Branding & Creative Design",
     description:
       "We design develop and maintain software applications designed here",
     icon: <FaBullhorn />,
-    image: socialMediaImg,
+    image: Branding,
   },
   {
     id: 2,
-    title: "E-commerce Development",
+    title: "SEO Optimaization",
     description:
       "We design develop and maintain software applications designed here",
     icon: <FaLaptopCode />,
-    image: socialMediaImg,
+    image: seooptimaization,
   },
   {
     id: 3,
@@ -36,15 +41,15 @@ const services = [
     description:
       "We design develop and maintain software applications designed here",
     icon: <FaChartPie />,
-    image: socialMediaImg,
+    image: socialmediamarketing,
   },
   {
     id: 4,
-    title: "App Development",
+    title: "Web Design",
     description:
       "We design develop and maintain software applications designed here",
     icon: <FaMobileAlt />,
-    image: socialMediaImg,
+    image: webdesign,
   },
   {
     id: 5,
@@ -52,7 +57,7 @@ const services = [
     description:
       "We design develop and maintain software applications designed here",
     icon: <FaBullhorn />,
-    image: socialMediaImg,
+    image: contentmarketingteam,
   },
   {
     id: 6,
@@ -60,7 +65,7 @@ const services = [
     description:
       "We design develop and maintain software applications designed here",
     icon: <FaChartPie />,
-    image: socialMediaImg,
+    image: Digitalstartegies,
   },
 ];
 

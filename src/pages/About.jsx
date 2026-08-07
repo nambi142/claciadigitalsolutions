@@ -18,7 +18,7 @@ import {
   FaTrophy,
   FaChevronRight
 } from "react-icons/fa";
-import { decorativeIcons } from "../components/Decorativeicons";
+import { decorativeIcons } from "../pages/Decorativeicons";
 
 const clientLogos = [
   { id: 1, name: "Finance Plus", image: clientlogo1 },

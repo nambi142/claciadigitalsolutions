@@ -157,7 +157,7 @@ const Home = () => {
   return (
     <section className={darkMode ? "home dark" : "home"}>
       {/* ---------- HERO ---------- */}
-      <section className="hero reveal">
+      <section className="hero">
         <div className="hero-container">
           <div
             className="hero-bg"
@@ -192,7 +192,7 @@ const Home = () => {
       </section>
 
       {/* ---------- WHY CHOOSE US (directly below the hero) ---------- */}
-      <section className="why-choose-us reveal-left">
+      <section className="why-choose-us">
         <div className="wcu-container">
           {/* LEFT SIDE - IMAGE WITH FLOATING ANIMATED CARDS */}
           <div className="wcu-image-wrap">
@@ -279,16 +279,16 @@ const Home = () => {
               ))}
             </div>
 
-            <button className="wcu-cta">
+            <Link to="/service" className="wcu-cta">
               Explore Our Services
               <span className="wcu-cta-arrow">→</span>
-            </button>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Benifits of SEO */}
-      <section className="benefits-section reveal-right">
+      <section className="benefits-section">
         <div className="benefits-container">
           <div className="benefits-heading">
             <span className="benefits-tag">OUR SERVICES</span>
@@ -323,7 +323,7 @@ const Home = () => {
       </section>
 
       {/* ---------- DEDICATED SUPPORT ---------- */}
-      <section className="support-section reveal-left">
+      <section className="support-section">
         <div className="support-container">
           <div className="support-content">
             <span className="support-tag">SUPPORT</span>
@@ -356,7 +356,7 @@ const Home = () => {
       </section>
 
       {/* ---------- WHAT CLIENTS SAY ---------- */}
-      <section className="testimonials-section reveal-right">
+      <section className="testimonials-section">
         <div className="testimonials-container">
           <div className="testimonials-header">
             <span className="testimonials-tag">

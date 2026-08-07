@@ -7,34 +7,34 @@ import businessCard from "../assets/services/bussinesscard.jpeg";
 import googleAds from "../assets/services/googleads.jpeg";
 import metaAds from "../assets/services/metaads.jpeg";
 import webDevelopment from "../assets/services/webdevlopement.jpeg";
-import { decorativeIcons } from "../components/Decorativeicons";
+import { decorativeIcons } from "../pages/Decorativeicons";
 
 // Sample project data — replace with your real projects
 const projects = [
   {
     id: 1,
-    title: "Digital Marketing Campaign",
+    title: "Brand Identity Development",
     category: "marketing",
     categoryLabel: "Marketing",
     image: businessCard,
   },
   {
     id: 2,
-    title: "SEO Growth Strategy",
+    title: "Performance Marketing Campaign",
     category: "optimization",
     categoryLabel: "Optimization",
     image: googleAds,
   },
   {
     id: 3,
-    title: "App Connectivity Platform",
+    title: "Website Designing",
     category: "development",
     categoryLabel: "Development",
     image: metaAds,
   },
   {
     id: 4,
-    title: "Social Media Strategy",
+    title: "Social Media Growth Campaign",
     category: "media",
     categoryLabel: "Media",
     image: webDevelopment,

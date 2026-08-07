@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import "../css/Contact.css";
-import { decorativeIcons } from "../components/Decorativeicons";
+import { decorativeIcons } from "../pages/Decorativeicons";
 import {
   FaChevronRight,
   FaPhoneAlt,
@@ -18,12 +18,12 @@ const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
 const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
 
 // ---------- Contact details ----------
-const CONTACT_PHONE = "(00) 123 456 789";
-const CONTACT_PHONE_RAW = "+00123456789";
-const CONTACT_EMAIL = "info@gmail.com";
-const WHATSAPP_NUMBER = "00123456789";
+const CONTACT_PHONE = "+91 6379080696";
+const CONTACT_PHONE_RAW = "6379080696";
+const CONTACT_EMAIL = " claciadigitalsolutions@gmail.com";
+const WHATSAPP_NUMBER = "6379080696";
 const LINKEDIN_URL = "https://linkedin.com/in/yourprofile";
-const INSTAGRAM_URL = "https://instagram.com/yourprofile";
+const INSTAGRAM_URL = "https://www.instagram.com/clacia_digital_solutions?igsh=bGZmMmkwbm9hNml6ttps://instagram.com/yourprofile";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -48,7 +48,12 @@ const Contact = () => {
     setStatus({ sending: true, success: null });
 
     emailjs
-      .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formRef.current, EMAILJS_PUBLIC_KEY)
+      .sendForm(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        EMAILJS_PUBLIC_KEY,
+      )
       .then(() => {
         setStatus({ sending: false, success: true });
         setFormData({ name: "", email: "", phone: "", message: "" });
@@ -86,12 +91,16 @@ const Contact = () => {
           <div className="contact-info">
             <h1 className="contact-heading">Feel free to talk</h1>
             <p className="contact-subtext">
-              We are always ready to help. There are many ways to contact us.
-              You may drop us a line, give us a call, or send an email.
+              Whether you're launching a new business, strengthening your brand,
+              or scaling your digital presence, Clacia Digital Solutions is here
+              to help you achieve measurable success. Services
             </p>
 
             <div className="contact-methods">
-              <a href={`tel:${CONTACT_PHONE_RAW}`} className="contact-method contact-method-link">
+              <a
+                href={`tel:${CONTACT_PHONE_RAW}`}
+                className="contact-method contact-method-link"
+              >
                 <div className="icon-circle">
                   <FaPhoneAlt />
                 </div>
@@ -101,7 +110,10 @@ const Contact = () => {
                 </div>
               </a>
 
-              <a href={`mailto:${CONTACT_EMAIL}`} className="contact-method contact-method-link">
+              <a
+                href={`mailto:${CONTACT_EMAIL}`}
+                className="contact-method contact-method-link"
+              >
                 <div className="icon-circle">
                   <FaEnvelope />
                 </div>
@@ -118,13 +130,28 @@ const Contact = () => {
               <div className="extra-block">
                 <h3>Follow Us</h3>
                 <div className="social-icons">
-                  <a href={`https://wa.me/${WHATSAPP_NUMBER}`} aria-label="WhatsApp" target="_blank" rel="noreferrer">
+                  <a
+                    href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                    aria-label="WhatsApp"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FaWhatsapp />
                   </a>
-                  <a href={LINKEDIN_URL} aria-label="LinkedIn" target="_blank" rel="noreferrer">
+                  <a
+                    href={LINKEDIN_URL}
+                    aria-label="LinkedIn"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FaLinkedinIn />
                   </a>
-                  <a href={INSTAGRAM_URL} aria-label="Instagram" target="_blank" rel="noreferrer">
+                  <a
+                    href={INSTAGRAM_URL}
+                    aria-label="Instagram"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FaInstagram />
                   </a>
                   <a href={`mailto:${CONTACT_EMAIL}`} aria-label="Email">
@@ -134,7 +161,9 @@ const Contact = () => {
               </div>
               <div className="extra-block">
                 <h3>Location</h3>
-                <p className="location-text">2118 Thornridge Cir. Syre Bint, NY</p>
+                <p className="location-text">
+                  2118 Thornridge Cir. Syre Bint, NY
+                </p>
               </div>
             </div>
           </div>
@@ -142,7 +171,11 @@ const Contact = () => {
           {/* Right column - Form */}
           <div className="contact-form-wrapper">
             <h2 className="form-heading">Send us a message</h2>
-            <form ref={formRef} className="contact-form" onSubmit={handleSubmit}>
+            <form
+              ref={formRef}
+              className="contact-form"
+              onSubmit={handleSubmit}
+            >
               <input
                 type="text"
                 name="name"
@@ -178,15 +211,23 @@ const Contact = () => {
                 rows={5}
                 required
               />
-              <button type="submit" className="submit-btn" disabled={status.sending}>
+              <button
+                type="submit"
+                className="submit-btn"
+                disabled={status.sending}
+              >
                 {status.sending ? "Sending..." : "Submit Now"}
               </button>
 
               {status.success === true && (
-                <p className="form-status form-status-success">Message sent successfully!</p>
+                <p className="form-status form-status-success">
+                  Message sent successfully!
+                </p>
               )}
               {status.success === false && (
-                <p className="form-status form-status-error">Something went wrong. Please try again.</p>
+                <p className="form-status form-status-error">
+                  Something went wrong. Please try again.
+                </p>
               )}
             </form>
           </div>

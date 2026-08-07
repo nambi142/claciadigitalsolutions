@@ -113,7 +113,7 @@
 
 @media(max-width:992px) {
     .hero {
-        padding-top: 10px;
+        padding-top: 5px;
     }
 
     .hero-bg {
@@ -132,7 +132,7 @@
 @media(max-width:768px) {
 
     .hero {
-        padding-top: 10px;
+        padding-top: 5px;
     }
 
     .hero-container {
@@ -232,7 +232,7 @@
   height: auto;
   display: block;
   border-radius: 24px;
-  background: linear-gradient(135deg, #a020f0, #6d28d9);
+  background: #56b9e7;
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
@@ -443,6 +443,7 @@
 .wcu-cta {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   background: #a020f0;
   color: #fff;
@@ -452,15 +453,21 @@
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
+  text-decoration: none;
   transition: transform 0.2s ease, background 0.2s ease;
 }
+
 .wcu-cta:hover {
   background: #8718cc;
+  color: #fff;
   transform: translateY(-2px);
 }
+
 .wcu-cta-arrow {
+  display: inline-block;
   transition: transform 0.2s ease;
 }
+
 .wcu-cta:hover .wcu-cta-arrow {
   transform: translateX(4px);
 }
