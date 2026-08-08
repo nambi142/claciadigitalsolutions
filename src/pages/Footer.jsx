@@ -95,7 +95,7 @@ const Footer = () => {
                 claciadigitalsolutions@gmail.com
               </a>
 
-              <a href="tel:+6379080696" className="footer-contact-phone">
+              <a href="tel:6379080696" className="footer-contact-phone">
                   6379080696
               </a>
 
@@ -110,7 +110,7 @@ const Footer = () => {
                 </a>
 
                 <a
-                  href="https://wa.me/637980696"
+                  href="https://wa.me/6379080696"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="WhatsApp"

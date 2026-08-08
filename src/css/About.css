@@ -27,7 +27,7 @@ body.dark .about-content{
     font-weight:700;
     letter-spacing:.08em;
     text-transform:uppercase;
-    color:var(--ph-accent, #a020f0);
+    color:var(--ph-accent, #6c5ce7);
     margin-bottom:16px;
 }
 
@@ -50,7 +50,7 @@ body.dark .about-heading{
 
 .about-heading span{
     display:block;
-    color:var(--ph-accent, #a020f0);
+    color:var(--ph-accent, #6c5ce7);
 }
 
 body.dark .about-heading span{
@@ -74,7 +74,7 @@ body.dark .about-para{
     display:inline-block;
     margin-top:14px;
     padding:15px 36px;
-    background:var(--ph-accent, #a020f0);
+    background:var(--ph-accent, #6c5ce7);
     color:#fff;
     font-size:14px;
     font-weight:700;
@@ -95,7 +95,7 @@ body.dark .about-cta{
 }
 
 body.dark .about-cta:hover{
-    background:#a020f0;
+    background:#6c5ce7;
     color:#fff;
 }
 
@@ -227,7 +227,7 @@ body.dark .mv-divider{
     font-family:"Outfit", sans-serif;
     font-size:28px;
     font-weight:600;
-    color:#a020f0;
+    color:#6c5ce7;
     margin:0 0 16px;
     transition:.35s ease;
 }
@@ -311,7 +311,7 @@ body.dark .cv-section{
     font-weight:700;
     letter-spacing:.1em;
     text-transform:uppercase;
-    color:#a020f0;
+    color:#6c5ce7;
     margin-bottom:14px;
 }
 
@@ -349,7 +349,7 @@ body.dark .cv-heading{
 }
 
 .cv-divider span:last-child{
-    background:#a020f0;
+    background:#6c5ce7;
 }
 
 .cv-grid{
@@ -379,7 +379,7 @@ body.dark .cv-heading{
     left:0;
     width:100%;
     height:4px;
-    background:linear-gradient(90deg, var(--cv-c1, #a020f0), var(--cv-c2, #d7b4ff));
+    background:linear-gradient(90deg, var(--cv-c1, #6c5ce7), var(--cv-c2, #d7b4ff));
     transform:scaleX(0);
     transform-origin:left;
     transition:.4s ease;
@@ -420,7 +420,7 @@ body.dark .cv-index{
 }
 
 .cv-icon{
-    --cv-c1:#a020f0;
+    --cv-c1:#6c5ce7;
     --cv-c2:#d7b4ff;
 
     width:60px;
@@ -446,7 +446,7 @@ body.dark .cv-index{
     height:28px;
 }
 
-.cv-icon-1{ --cv-c1:#a020f0; --cv-c2:#d7b4ff; background:rgba(160,32,240,0.12); color:#a020f0; }
+.cv-icon-1{ --cv-c1:#6c5ce7; --cv-c2:#d7b4ff; background:rgba(160,32,240,0.12); color:#6c5ce7; }
 .cv-icon-2{ --cv-c1:#e07a3f; --cv-c2:#ffcfa8; background:rgba(224,122,63,0.12); color:#e07a3f; }
 .cv-icon-3{ --cv-c1:#2ea48f; --cv-c2:#a6ecdf; background:rgba(46,164,143,0.12); color:#2ea48f; }
 .cv-icon-4{ --cv-c1:#e03f8c; --cv-c2:#ffb8d9; background:rgba(224,63,140,0.12); color:#e03f8c; }
@@ -479,7 +479,7 @@ body.dark .cv-text{
 .cv-btn{
     display:inline-block;
     padding:16px 40px;
-    background:#a020f0;
+    background:#6c5ce7;
     color:#fff;
     font-size:14px;
     font-weight:700;
@@ -500,7 +500,7 @@ body.dark .cv-btn{
 }
 
 body.dark .cv-btn:hover{
-    background:#a020f0;
+    background:#6c5ce7;
     color:#fff;
 }
 
@@ -538,7 +538,7 @@ body.dark .cv-btn:hover{
 ========================================================== */
 
 .team-section{
-    --tm-accent:#a020f0;
+    --tm-accent:#6c5ce7;
     --tm-accent-dark:#6a0dad;
     --tm-bg:#ffffff;
     --tm-heading:#0d1b3e;
@@ -775,7 +775,7 @@ body.dark .clients-heading{
 }
 
 .clients-divider span:last-child{
-    background:#a020f0;
+    background:#6c5ce7;
 }
 
 .clients-para{
@@ -836,7 +836,7 @@ body.dark .clients-logo-box{
 }
 
 body.dark .clients-logo-box:hover{
-    border-color:#a020f0;
+    border-color:#6c5ce7;
     box-shadow:0 12px 30px rgba(0,0,0,0.4);
 }
 

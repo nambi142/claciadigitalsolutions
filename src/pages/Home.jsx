@@ -4,7 +4,7 @@ import { useTheme } from "../context/Themecontext";
 import { Link } from "react-router-dom";
 import supportImage from "../assets/supportimg.png";
 import heroImage from "../assets/background.jpeg";
-import whyChooseImage from "../assets/brandlogo.png";
+import whyChooseImage from "../assets/whychoosusimage.png";
 import metaAds from "../assets/services/metaads.jpeg";
 import googleAds from "../assets/services/googleads.jpeg";
 import uiux from "../assets/background.jpeg";

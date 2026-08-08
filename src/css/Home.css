@@ -56,7 +56,7 @@
 }
 
 .hero-content h1 span {
-    color: #b94cff;
+    color: #6c5ce7;
 }
 
 .hero-content p {
@@ -84,7 +84,7 @@
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
-    transition: .35s;
+    transition: 0.35s;
 }
 
 .primary-btn:hover {
@@ -94,7 +94,7 @@
 
 .secondary-btn {
     display: inline-block;
-    border: 2px solid rgba(255, 255, 255, .4);
+    border: 2px solid rgba(255, 255, 255, 0.4);
     background: transparent;
     color: #fff;
     cursor: pointer;
@@ -103,7 +103,7 @@
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
-    transition: .35s;
+    transition: 0.35s;
 }
 
 .secondary-btn:hover {
@@ -111,7 +111,13 @@
     color: #111;
 }
 
-@media(max-width:992px) {
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+
     .hero {
         padding-top: 5px;
     }
@@ -129,7 +135,12 @@
     }
 }
 
-@media(max-width:768px) {
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
 
     .hero {
         padding-top: 5px;
@@ -156,17 +167,29 @@
         font-size: 16px;
     }
 
+    /* Center hero buttons */
     .hero-buttons {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 15px;
     }
 
     .primary-btn,
     .secondary-btn {
         width: 60%;
+        text-align: center;
+        box-sizing: border-box;
     }
 }
 
-@media(max-width:480px) {
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
 
     .hero-content {
         padding: 20px;
@@ -183,13 +206,24 @@
     .hero-tag {
         font-size: 12px;
     }
+
+    .hero-buttons {
+        align-items: center;
+        width: 100%;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 75%;
+        text-align: center;
+    }
 }
 
 /* ============================================================
    WHY CHOOSE US SECTION (sits directly below the hero)
    ============================================================ */
 .why-choose-us {
-  padding: 30px 30px;
+  padding: 60px 30px;
   background: #ffffff;
   overflow: hidden;
 }
@@ -232,7 +266,7 @@
   height: auto;
   display: block;
   border-radius: 24px;
-  background: #6c5ce7;
+  background: #d8d7e2;
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
@@ -253,8 +287,8 @@
 
 /* Revenue chart card */
 .wcu-float-chart {
-  right: -30px;
-  top: 15%;
+  right: 90px;
+  top: 70%;
   padding: 14px 16px;
   width: 190px;
   animation-delay: 0s;
@@ -280,7 +314,7 @@
 
 /* Growth card */
 .wcu-float-growth {
-  left: -35px;
+  left: -15px;
   bottom: 10%;
   display: flex;
   align-items: center;
@@ -322,30 +356,30 @@
 }
 
 .wcu-badge-facebook{
-    top:-12px;
+    top:5px;
     left:22%;
     background:#1877F2;
     animation-delay:.3s;
 }
 
 .wcu-badge-instagram{
-    top:12%;
-    right:-16px;
+    top:14%;
+    right:5px;
     background:linear-gradient(135deg,#f9ce34,#ee2a7b,#6228d7);
     animation-delay:.8s;
 }
 
 .wcu-badge-email{
-    bottom:30%;
-    left:-16px;
+    bottom:40%;
+    left: 20px;
     background:#EA4335;
     animation-delay:1.3s;
 }
 
 .wcu-badge-website{
-    bottom:-12px;
-    right:18%;
-    background:#0F9D58;
+    bottom: 100px;
+    right:5%;
+    background:#08d646;
     animation-delay:1.8s;
 }
 
@@ -364,8 +398,8 @@
 }
 
 .wcu-badge-message{
-    bottom:60%;
-    left:-18px;
+    bottom:78%;
+    left:18px;
     background:#06b6d4;
     animation-delay:3.2s;
 }
@@ -520,7 +554,7 @@ body.dark .footer{
 @media (max-width: 900px) {
   .wcu-container {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 60px;
   }
   .wcu-content {
     align-items: flex-start;
@@ -569,7 +603,7 @@ body.dark .footer{
 
 .benefits-tag{
     display:inline-block;
-    padding:10px 24px;
+    padding:20px 24px;
     border-radius:40px;
     background:#f6ecff;
     color:#6c5ce7;
@@ -825,7 +859,7 @@ body.dark .benefit-vertical{
 @media (max-width:992px){
 
     .benefits-section{
-        padding:30px 0;
+        padding:10px 0;
     }
 
     .benefits-container{
@@ -837,7 +871,7 @@ body.dark .benefit-vertical{
     }
 
     .benefits-heading h2{
-        font-size:36px;
+        font-size:30px;
     }
 
     .benefits-heading p{
@@ -1299,10 +1333,10 @@ body.dark .support-btn:hover{
 ========================================================== */
 
 body.dark .testimonials-section{
-    --t-bg:#0e0817;
+    --t-bg:#111;
     --t-heading:#ffffff;
     --t-subtext:#c9b8db;
-    --t-card-bg:#150b23;
+    --t-card-bg:#2b292e;
     --t-card-border:#2a1f3d;
     --t-accent:#8aa4ff;
     --t-accent-dark:#3a4fb0;
