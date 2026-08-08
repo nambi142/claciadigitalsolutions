@@ -566,7 +566,7 @@ body.dark .footer{
 
 @media (max-width: 480px) {
   .why-choose-us {
-    padding: 30px 20px;
+    padding: 60px 20px;
   }
   .wcu-features {
     grid-template-columns: 1fr;
