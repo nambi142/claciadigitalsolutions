@@ -16,6 +16,7 @@ import Digitalstartegies from "../assets/our_service/digital-stratagies.png";
 import workflowImg from "../assets/workflowimg.png";
 import innovationImg from "../assets/innovation.png";
 import { decorativeIcons } from "../pages/Decorativeicons";
+import { Link } from "react-router-dom";
 
 
 const services = [
@@ -160,9 +161,9 @@ const Services = () => {
               better results for every client we work with.
             </p>
 
-            <a href="/contact" className="skillup-btn">
+            <Link to="/contact" className="skillup-btn">
               Free Consultation
-            </a>
+            </Link>
 
             <div className="skillup-bars">
               <div className="skillup-bar-row">

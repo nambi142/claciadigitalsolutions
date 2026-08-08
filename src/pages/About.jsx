@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/About.css";
 import { FaLinkedinIn, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import aboutImage from "../assets/aboutus.png";
 import clientlogo1 from "../assets/clientlogo1.jpeg";
 import clientlogo2 from "../assets/clientlogo2.jpeg";
@@ -167,9 +168,9 @@ const About = () => {
               sustainable growth.
             </p>
 
-            <a href="/contact" className="about-cta">
+            <Link to="/contact" className="about-cta">
               Contact Us
-            </a>
+            </Link>
           </div>
 
           <div className="about-content-media">

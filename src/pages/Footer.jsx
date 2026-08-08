@@ -88,15 +88,12 @@ const Footer = () => {
             <div className="footer-col">
               <h4 className="footer-col-title">Contact Us</h4>
 
-              <a
-                href="claciadigitalsolutions@gmail.com"
-                className="footer-contact-email"
-              >
+              <a href="mailto:claciadigitalsolutions@gmail.com" className="footer-contact-email">
                 claciadigitalsolutions@gmail.com
               </a>
 
               <a href="tel:6379080696" className="footer-contact-phone">
-                  6379080696
+                6379080696
               </a>
 
               <div className="footer-socials">
